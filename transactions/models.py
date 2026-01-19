@@ -1,6 +1,7 @@
 # transactions/models.py
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 class Transaction(models.Model):
     TRANSACTION_TYPES = (
@@ -12,4 +13,4 @@ class Transaction(models.Model):
     amount = models.FloatField()
     category = models.CharField(max_length=50)
     transaction_type = models.CharField(choices=TRANSACTION_TYPES, max_length=10)
-    date = models.DateField(auto_now_add=True)
+    date = models.DateField(default=timezone.now)
