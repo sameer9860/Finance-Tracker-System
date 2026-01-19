@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "postgresql://postgres:sameeer@localhost:5432/finance_db"
+DATABASE_URL = "sqlite:////home/samir/finance_tracker_project/db.sqlite3"
 
 engine = create_engine(
     DATABASE_URL,
-    pool_pre_ping=True
+    connect_args={"check_same_thread": False}
 )
 
 SessionLocal = sessionmaker(

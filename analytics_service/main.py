@@ -5,7 +5,17 @@ import crud
 from schemas import AnalyticsResponse
 
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="Finance Analytics Service")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def get_db():
     db = SessionLocal()
