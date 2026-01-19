@@ -69,3 +69,24 @@ def get_budget_status(db, user_id: int, month: str):
         })
     
     return result
+
+def monthly_summary(db, user_id: int, month: str):
+    # month format: 'YYYY-MM'
+    query = text("""
+        SELECT transaction_type, SUM(amount) AS total
+        FROM transactions_transaction
+        WHERE user_id = :user_id
+        AND strftime('%Y-%m', date) = :month
+        GROUP BY transaction_type
+    """)
+    result = db.execute(query, {"user_id": user_id, "month": month}).fetchall()
+    
+    summary = {"income": 0.0, "expense": 0.0, "balance": 0.0}
+    for row in result:
+        if row[0] == 'income':
+            summary["income"] = float(row[1])
+        else:
+            summary["expense"] = float(row[1])
+    
+    summary["balance"] = summary["income"] - summary["expense"]
+    return summary

@@ -38,3 +38,8 @@ def category_spending(user_id: int, db: Session = Depends(get_db)):
 @app.get("/analytics/budget-status")
 def budget_status(user_id: int, month: str, db: Session = Depends(get_db)):
     return crud.get_budget_status(db, user_id, month)
+
+@app.get("/analytics/monthly-summary")
+def monthly_summary(user_id: int, month: str, db: Session = Depends(get_db)):
+    # month format: 'YYYY-MM'
+    return crud.monthly_summary(db, user_id, month)
