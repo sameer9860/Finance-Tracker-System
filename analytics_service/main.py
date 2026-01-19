@@ -35,3 +35,6 @@ def income_expense(user_id: int, db: Session = Depends(get_db)):
 @app.get("/analytics/category-spending", response_model=AnalyticsResponse)
 def category_spending(user_id: int, db: Session = Depends(get_db)):
     return crud.category_wise_spending(db, user_id)
+@app.get("/analytics/budget-status")
+def budget_status(user_id: int, month: str, db: Session = Depends(get_db)):
+    return crud.get_budget_status(db, user_id, month)
