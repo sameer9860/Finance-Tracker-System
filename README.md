@@ -35,19 +35,19 @@ finance-frontend/src/assets/
 
 ### 💸 Budgets
 
-![Budgets](finance-frontend/src/assets/budgets.png)
+![Budgets](./finance-frontend/src/assets/budgets.png)
 
 ---
 
 ### 📑 Transactions
 
-![Transactions](finance-frontend/src/assets/transaction.png)
+![Transactions](./finance-frontend/src/assets/transaction.png)
 
 ---
 
 ### ⚙️ Settings
 
-![Settings](/Finance_Tracker_Project/finance-frontend/src/assets/settings.png)
+![Settings](./finance-frontend/src/assets/settings.png)
 
 ---
 
