@@ -27,27 +27,27 @@ finance-frontend/src/assets/
 
 ### 📊 Dashboards
 
-![Dashboard](finance-frontend/src/assets/dashboard.png)
-![Dashboard](finance-frontend/src/assets/dashboard2.png)
+![Dashboard](sereenshots/dashboard.png)
+![Dashboard](sereenshots/dashboard2.png)
 
 
 ---
 
 ### 💸 Budgets
 
-![Budgets](finance-frontend/src/assets/budgets.png)
+![Budgets](sereenshots/budgets.png)
 
 ---
 
 ### 📑 Transactions
 
-![Transactions](finance-frontend/src/assets/transaction.png)
+![Transactions](sereenshots/transaction.png)
 
 ---
 
 ### ⚙️ Settings
 
-![Settings](finance-frontend/src/assets/settings.png)
+![Settings](sereenshots/settings.png)
 
 ---
 
