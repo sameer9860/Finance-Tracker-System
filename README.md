@@ -25,7 +25,7 @@ finance-frontend/src/assets/
 
 ---
 
-### 📊 Dashboard
+### 📊 Dashboards
 
 ![Dashboard](finance-frontend/src/assets/dashboard.png)
 ![Dashboard](finance-frontend/src/assets/dashboard2.png)
