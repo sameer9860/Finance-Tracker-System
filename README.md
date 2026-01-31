@@ -27,8 +27,9 @@ finance-frontend/src/assets/
 
 ### 📊 Dashboards
 
-![Dashboard](finance-frontend/src/assets/dashboard.png)
-![Dashboard](finance-frontend/src/assets/dashboard2.png)
+![Dashboard](./finance-frontend/src/assets/dashboard.png)
+![Dashboard](./finance-frontend/src/assets/dashboard2.png)
+
 
 ---
 
@@ -46,7 +47,7 @@ finance-frontend/src/assets/
 
 ### ⚙️ Settings
 
-![Settings](finance-frontend/src/assets/settings.png)
+![Settings](/Finance_Tracker_Project/finance-frontend/src/assets/settings.png)
 
 ---
 
