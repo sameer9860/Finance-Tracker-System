@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#uvicorn main:app --reload
 
 # Application definition
 
